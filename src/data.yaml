@@ -1,0 +1,73 @@
+manifest:
+  CESA_list:
+  - CESA: CESA-2020:0196
+    RPM_list:
+    - CVEs:
+      - CVE-2020-2583
+      - CVE-2020-2590
+      - CVE-2020-2593
+      - CVE-2020-2601
+      - CVE-2020-2604
+      - CVE-2020-2654
+      - CVE-2020-2659
+      install_cmd: sudo yum localinstall -y --installroot=$ROOT $RPM_NAME --nogpgcheck
+      name: java-1.8.0-openjdk
+      reboot: 'No'
+      rpm_pkg: java-1.8.0-openjdk-1.8.0.242.b08-0.el7_7.x86_64.rpm
+      type: User_RPM_type
+      ver: 1.8.0.242.b08-0.el7_7
+  - CESA: CESA-2020:0227
+    RPM_list:
+    - CVEs:
+      - CVE-2019-13734
+      install_cmd: sudo yum localinstall -y --installroot=$ROOT $RPM_NAME --nogpgcheck
+      name: sqlite
+      reboot: 'No'
+      rpm_pkg: sqlite-3.7.17-8.el7_7.1.x86_64.rpm
+      type: User_RPM_type
+      ver: 3.7.17-8.el7_7.1
+  - CESA: CESA-2020:0540
+    RPM_list:
+    - CVEs:
+      - CVE-2019-18634
+      install_cmd: sudo yum localinstall -y --installroot=$ROOT $RPM_NAME --nogpgcheck
+      name: sudo
+      reboot: 'No'
+      rpm_pkg: sudo-1.8.23-4.el7_7.2.x86_64.rpm
+      type: User_RPM_type
+      ver: 1.8.23-4.el7_7.2
+  - CESA: CESA-2020:0578
+    RPM_list:
+    - CVEs:
+      - CVE-2019-16865
+      - CVE-2020-5312
+      install_cmd: sudo yum localinstall -y --installroot=$ROOT $RPM_NAME --nogpgcheck
+      name: python-pillow
+      reboot: 'No'
+      rpm_pkg: python-pillow-2.0.0-20.gitd1c6db8.el7_7.x86_64.rpm
+      type: User_RPM_type
+      ver: 2.0.0-20.gitd1c6db8.el7_7
+  arch: x86_64
+  goldimage_type: PE_goldimage_type
+  goldimage_ver: CVM_PE_GI-7.7r1.7.1-20200319
+  goldimage_ver_dep:
+  - CVM_PE_GI-7.7r1.7.1-0000000
+  - 7.7r1.6.2
+  - 7.6r2
+release_notes:
+  New patches included in this bundle:
+  - java-1.8.0-openjdk-1.8.0.242.b08-0.el7_7.x86_64.rpm
+  - sqlite-3.7.17-8.el7_7.1.x86_64.rpm
+  - sudo-1.8.23-4.el7_7.2.x86_64.rpm
+  - python-pillow-2.0.0-20.gitd1c6db8.el7_7.x86_64.rpm
+  Targeted release:
+  - 7.7r1.7
+  - 7.7r1.6
+  - 7.7r1.5.1
+  - 7.6r2
+  The CVM_PE_GI-7.7r1.7.1-20200319 patch fixes the following CVEs:
+  - CESA-2020:0196: https://www.tenable.com/plugins/nessus/133312
+  - CESA-2020:0227: https://www.tenable.com/plugins/nessus/133316
+  - CESA-2020:0540: https://www.tenable.com/plugins/nessus/133770
+  - CESA-2020:0578: https://www.tenable.com/plugins/nessus/134091
+
