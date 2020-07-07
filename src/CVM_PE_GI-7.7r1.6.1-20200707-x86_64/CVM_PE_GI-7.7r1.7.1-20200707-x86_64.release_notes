@@ -1,0 +1,17 @@
+The CVM_PE_GI-7.7r1.7.1-20200707 patch fixes the following CVEs:
+  CESA-2020:0196
+  CESA-2020:0227
+  CESA-2020:0540
+  CESA-2020:0578
+
+New patches included in this bundle:
+  sqlite-3.7.17-8.el7_7.1.x86_64.rpm
+  sudo-1.8.23-4.el7_7.2.x86_64.rpm
+  python-pillow-2.0.0-20.gitd1c6db8.el7_7.x86_64.rpm
+  java-1.8.0-openjdk-1.8.0.242.b08-0.el7_7.x86_64.rpm
+
+Targeted releases:
+  7.7r1.7
+  7.7r1.6
+  7.7r1.5.1
+  7.6r2
